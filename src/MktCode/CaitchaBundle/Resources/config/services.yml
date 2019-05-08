@@ -1,0 +1,24 @@
+services:
+    mktcode_caitcha.form.type.caitcha:
+        class: MktCode\CaitchaBundle\Form\Type\CaitchaType
+        arguments:
+            - "%caitcha%"
+        tags:
+            - { name: form.type, alias: caitcha }
+
+    mktcode_caitcha.form.type.honeypot:
+        class: MktCode\CaitchaBundle\Form\Type\HoneypotType
+        tags:
+            - { name: form.type, alias: honeypot }
+
+    mktcode_caitcha.form.type.timediff:
+        class: MktCode\CaitchaBundle\Form\Type\TimediffType
+        tags:
+            - { name: form.type, alias: timediff }
+
+    mktcode_caitcha.form.validator.timediff:
+        class: MktCode\CaitchaBundle\Form\Validator\Constraints\TimediffValidator
+        arguments:
+            - "%caitcha%"
+        tags:
+            - { name: validator.constraint_validator, alias: mktcode_caitcha_timediff }

@@ -1,0 +1,18 @@
+{
+    "name": "mktcode/caitcha-bundle",
+    "description": "This bundle adds a form type for invisible bot protection with honeypot and time diff methods.",
+    "keywords": ["caitcha", "captcha", "form", "spam", "bot", "protection"],
+    "license": "LGPL",
+    "authors": [
+        {
+            "name": "mkt",
+            "email": "m.kottlaender@kabelmail.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-0": { "MktCode": "src/" }
+    }
+}
