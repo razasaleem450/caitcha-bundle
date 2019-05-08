@@ -2,7 +2,7 @@
     "name": "xohotech/caitcha-bundle",
     "description": "This bundle adds a form type for invisible bot protection with honeypot and time diff methods.",
     "keywords": ["caitcha", "captcha", "form", "spam", "bot", "protection"],
-    "license": "LGPL",
+    "license": "MIT",
     "authors": [
         {
             "name": "xoho.tech",
